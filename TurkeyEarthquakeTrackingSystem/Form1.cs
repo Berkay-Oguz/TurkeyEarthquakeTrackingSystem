@@ -33,8 +33,8 @@ namespace TurkeyEarthquakeTrackingSystem
             EarthquakeMap.Position = new GMap.NET.PointLatLng(39.1432984, 35.3912303);
             EarthquakeMap.ShowCenter = false;
 
-            markers.GetMarkers();
             connectManager.GetApiData();
+            markers.GetMarkers();
             EarthquakeMap.Overlays.Add(markers.markers);
         }
     }
