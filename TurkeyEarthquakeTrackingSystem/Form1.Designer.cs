@@ -41,17 +41,15 @@ namespace TurkeyEarthquakeTrackingSystem
             this.EarthquakeMap.Bearing = 0F;
             this.EarthquakeMap.CanDragMap = true;
             this.EarthquakeMap.EmptyTileColor = System.Drawing.Color.Navy;
-            this.EarthquakeMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EarthquakeMap.GrayScaleMode = false;
             this.EarthquakeMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.EarthquakeMap.LevelsKeepInMemory = 5;
-            this.EarthquakeMap.Location = new System.Drawing.Point(1, 1);
-            this.EarthquakeMap.Margin = new System.Windows.Forms.Padding(2);
+            this.EarthquakeMap.Location = new System.Drawing.Point(1, 0);
             this.EarthquakeMap.MarkersEnabled = true;
             this.EarthquakeMap.MaxZoom = 24;
             this.EarthquakeMap.MinZoom = 0;
             this.EarthquakeMap.MouseWheelZoomEnabled = true;
-            this.EarthquakeMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.EarthquakeMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
             this.EarthquakeMap.Name = "EarthquakeMap";
             this.EarthquakeMap.NegativeMode = false;
             this.EarthquakeMap.PolygonsEnabled = true;
@@ -60,7 +58,7 @@ namespace TurkeyEarthquakeTrackingSystem
             this.EarthquakeMap.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.EarthquakeMap.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.EarthquakeMap.ShowTileGridLines = false;
-            this.EarthquakeMap.Size = new System.Drawing.Size(1130, 720);
+            this.EarthquakeMap.Size = new System.Drawing.Size(969, 717);
             this.EarthquakeMap.TabIndex = 0;
             this.EarthquakeMap.Zoom = 6D;
             // 
