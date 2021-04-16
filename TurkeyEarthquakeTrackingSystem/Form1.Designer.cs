@@ -47,7 +47,7 @@ namespace TurkeyEarthquakeTrackingSystem
             this.EarthquakeMap.Location = new System.Drawing.Point(1, 0);
             this.EarthquakeMap.MarkersEnabled = true;
             this.EarthquakeMap.MaxZoom = 24;
-            this.EarthquakeMap.MinZoom = 0;
+            this.EarthquakeMap.MinZoom = 6;
             this.EarthquakeMap.MouseWheelZoomEnabled = true;
             this.EarthquakeMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionWithoutCenter;
             this.EarthquakeMap.Name = "EarthquakeMap";
