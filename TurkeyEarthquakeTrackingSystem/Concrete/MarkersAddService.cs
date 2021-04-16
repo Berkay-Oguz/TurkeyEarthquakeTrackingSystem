@@ -3,6 +3,7 @@ using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,8 +21,10 @@ namespace TurkeyEarthquakeTrackingSystem.Concrete
             connectManager.GetApiData();
             foreach (var earthquake in connectManager.earthquakes)
             {
-                double enlem = Convert.ToDouble(earthquake.enlem);
-                double boylam = Convert.ToDouble(earthquake.boylam);
+                double enlem;
+                double boylam;
+                double.TryParse(earthquake.enlem, NumberStyles.Any, CultureInfo.InvariantCulture, out enlem);
+                double.TryParse(earthquake.boylam, NumberStyles.Any, CultureInfo.InvariantCulture, out boylam);
                 GMapMarker marker2 = new GMarkerGoogle(
                    new PointLatLng(enlem, boylam),
                    GMarkerGoogleType.red);
